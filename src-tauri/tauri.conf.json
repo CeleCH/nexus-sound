@@ -1,0 +1,32 @@
+{
+  "$schema": "../node_modules/@tauri-apps/cli/config.schema.json",
+  "productName": "Nexus Sound",
+  "version": "0.1.0",
+  "identifier": "com.cele.nexussound",
+
+  "build": {
+    "beforeBuildCommand": "npm run build",
+    "frontendDist": "../out"
+  },
+
+  "app": {
+    "windows": [
+      {
+        "title": "Nexus Sound",
+        "width": 900,
+        "height": 600,
+        "resizable": true
+      }
+    ],
+    "security": {
+      "csp": null
+    }
+  },
+
+  "bundle": {
+    "active": true,
+    "icon": [
+      "icons/icon.ico"
+    ]
+  }
+}
