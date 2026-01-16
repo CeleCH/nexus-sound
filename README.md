@@ -1,36 +1,80 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🎧 Nexus Sound
 
-## Getting Started
+**Nexus Sound** es una aplicación de escritorio para reproducir música, desarrollada con **Next.js** y **Tauri**, que permite escuchar archivos locales y reproducir contenido de YouTube en una interfaz moderna y ligera.
 
-First, run the development server:
+## ✨ Características
+
+- 🎵 Reproducción de música local (MP3 / WAV)
+- ▶️ Reproducción de videos de YouTube mediante enlace
+- 🔊 Control de volumen y mute
+- ⏭ Navegación básica entre canciones
+- 🖥️ Aplicación de escritorio instalable para Windows
+- ⚡ Rápida y ligera gracias a Tauri
+
+## 🛠 Tecnologías utilizadas
+
+- **Next.js** (App Router)
+- **React**
+- **TypeScript**
+- **Tailwind CSS**
+- **Tauri** (Rust)
+
+## 🚀 Ejecución en modo desarrollo
+
+Para ejecutar la aplicación en modo desarrollo (web):
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Luego abre en el navegador:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+http://localhost:3000
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+📦 Construir la aplicación de escritorio
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Para generar el instalador de escritorio (Windows):
 
-## Learn More
+npm run tauri build
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+El instalador se generará en:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+src-tauri/target/release/bundle/
 
-## Deploy on Vercel
+📄 Estructura del proyecto
+nexus-sound/
+├─ app/               # Frontend (Next.js)
+├─ public/            # Recursos estáticos
+├─ src-tauri/         # Configuración y build de Tauri
+├─ package.json
+├─ next.config.ts
+└─ README.md
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+🎯 Objetivo del proyecto
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Este proyecto fue desarrollado como parte de un portafolio personal, con el objetivo de demostrar habilidades en:
+
+Desarrollo frontend moderno
+
+Integración web → desktop
+
+Manejo de builds de producción
+
+Creación de aplicaciones instalables reales
+
+📌 Estado del proyecto
+
+🟢 Versión 1.0 – Funcional y estable
+Posibles mejoras futuras:
+
+Playlists
+
+Soporte multiplataforma
+
+Mejoras visuales
+
+Integración con más fuentes de audio
+
+👤 Autor
+
+Desarrollado por Cele 💚
